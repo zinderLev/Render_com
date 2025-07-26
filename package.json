@@ -9,14 +9,14 @@
     "dev": "tsc --watch & node dist/server.js"
   },
   "dependencies": {
-    "fastify": "^4.28.0",             // Сам Fastify
-    "@fastify/view": "^9.0.0",        // Плагин для работы с шаблонизаторами (EJS)
-    "ejs": "^3.1.10"                  // EJS как шаблонизатор
+    "@fastify/view": "^9.1.0",
+    "ejs": "^3.1.10",
+    "fastify": "^4.29.1"
   },
   "devDependencies": {
+    "@types/ejs": "^3.1.5",
     "@types/node": "^20.14.9",
-    "@types/ejs": "^3.1.5",           // Типы для EJS
-    "typescript": "^5.5.3"            // Сам TypeScript
+    "typescript": "^5.5.3"
   },
   "engines": {
     "node": "20.x"

@@ -54,7 +54,7 @@ const start = async () => {
   try {
     const PORT: number = parseInt(process.env.PORT || '3000', 10);
     await fastify.listen({ port: PORT, host: '0.0.0.0' }); // 0.0.0.0 для совместимости с Render.com
-    fastify.log.info(`Server listening on ${fastify.server.address().port}`);
+    fastify.log.info(`Server listening on ${fastify.server.address()!.toString}`);
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
