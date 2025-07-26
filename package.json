@@ -1,0 +1,26 @@
+{
+  "name": "echo-app-render-fastify-ts",
+  "version": "1.0.0",
+  "description": "A simple echo project for Render.com with HTML form (Fastify + TypeScript version).",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsc --watch & node dist/server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.28.0",             // Сам Fastify
+    "@fastify/view": "^9.0.0",        // Плагин для работы с шаблонизаторами (EJS)
+    "ejs": "^3.1.10"                  // EJS как шаблонизатор
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/ejs": "^3.1.5",           // Типы для EJS
+    "typescript": "^5.5.3"            // Сам TypeScript
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
